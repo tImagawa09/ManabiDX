@@ -270,7 +270,7 @@ def plot_quantity_by_category_foreach_and_store(df, store_id, agg_period="D"):
         plt.legend(title="商品カテゴリ", loc="upper left", bbox_to_anchor=(1, 1))
 
         # y軸の範囲を設定（指定の値を採用）
-        plt.ylim(0, 1500)
+        plt.ylim(0, 15000)
         plt.ticklabel_format(style="plain", axis="y")
 
         # x軸の日付を設定
@@ -330,7 +330,7 @@ def plot_sales_by_category_and_store_by_weekday(df, store_id, agg_period="D"):
         plt.legend(title="商品カテゴリ", loc="upper left", bbox_to_anchor=(1, 1))
 
         # y軸の範囲を設定（指定の値を採用）
-        plt.ylim(0, 1500)
+        plt.ylim(0, 30000000)
         plt.ticklabel_format(style="plain", axis="y")
 
         # x軸の日付を設定
@@ -389,7 +389,7 @@ def plot_quantity_by_category_and_store_by_weekday(df, store_id, agg_period="D")
         plt.legend(title="商品カテゴリ", loc="upper left", bbox_to_anchor=(1, 1))
 
         # y軸の範囲を設定（指定の値を採用）
-        plt.ylim(0, 1500)
+        plt.ylim(0, 15000)
         plt.ticklabel_format(style="plain", axis="y")
 
         # x軸の日付を設定
