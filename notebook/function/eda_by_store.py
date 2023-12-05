@@ -277,6 +277,7 @@ def plot_quantity_by_category_foreach_and_store(df, store_id, agg_period="D"):
             data=data["売上個数"], label=f"商品カテゴリ: {category}", dashes=False
         )
 
+<<<<<<< HEAD
     # グラフの設定
     plt.title(f"店舗ID {store_id} - 商品カテゴリ別売上個数 ({agg_period})")
     plt.xlabel("日付")
@@ -292,6 +293,11 @@ def plot_quantity_by_category_foreach_and_store(df, store_id, agg_period="D"):
     plt.grid()
 
     plt.show()
+=======
+        # y軸の範囲を設定（指定の値を採用）
+        plt.ylim(0, 15000)
+        plt.ticklabel_format(style="plain", axis="y")
+>>>>>>> c0ea71ed6f6de5ef33586cca41a96e2aa0a38670
 
 
 def plot_sales_by_category_and_store_by_weekday(df, store_id, agg_period="D"):
@@ -372,6 +378,7 @@ def plot_sales_by_category_and_store_by_weekday(df, store_id, agg_period="D"):
     plt.ylabel("売上")
     plt.legend(title="商品カテゴリ", loc="upper left", bbox_to_anchor=(1, 1))
 
+<<<<<<< HEAD
     # y軸の範囲を揃える
     min_y = min(y_limits)
     max_y = max(y_limits)
@@ -383,6 +390,11 @@ def plot_sales_by_category_and_store_by_weekday(df, store_id, agg_period="D"):
     plt.grid()
 
     plt.show()
+=======
+        # y軸の範囲を設定（指定の値を採用）
+        plt.ylim(0, 30000000)
+        plt.ticklabel_format(style="plain", axis="y")
+>>>>>>> c0ea71ed6f6de5ef33586cca41a96e2aa0a38670
 
 
 def plot_quantity_by_category_and_store_by_weekday(df, store_id, agg_period="D"):
@@ -547,11 +559,16 @@ def plot_detrended_sales_by_store(df, unit="day", window_size=7, moving_average_
         plt.ylabel("売り上げ")
         plt.legend(title="店舗ID", loc="upper left", bbox_to_anchor=(1, 1))
 
+<<<<<<< HEAD
         if unit == "day":
             ax.xaxis.set_major_locator(mdates.MonthLocator(interval=1))
             ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y/%m/%d"))
             plt.xticks(rotation=45, ha="right")  # 45度傾けて表示
         plt.ylim(-y_limit, y_limit)  # y軸範囲の設定
+=======
+        # y軸の範囲を設定（指定の値を採用）
+        plt.ylim(0, 15000)
+>>>>>>> c0ea71ed6f6de5ef33586cca41a96e2aa0a38670
         plt.ticklabel_format(style="plain", axis="y")
         plt.grid()
         plt.show()
