@@ -22,4 +22,6 @@ pillow
 librosa
 kaggle
 pandas_profiling
-japanize_matplotlib
+japanize-matplotlib
+darts
+statsmodels
